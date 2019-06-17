@@ -25,29 +25,31 @@
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.booksDataSet = new Books.BooksDataSet();
-            this.departmentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.departmentsTableAdapter = new Books.BooksDataSetTableAdapters.DepartmentsTableAdapter();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.departmentsLiteratureBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.literatureTableAdapter = new Books.BooksDataSetTableAdapters.LiteratureTableAdapter();
-            this.button1 = new System.Windows.Forms.Button();
             this.кодDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.названиеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ответственныйDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.стеллажDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.departmentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.booksDataSet = new Books.BooksDataSet();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.кодDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.авторDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.названиеDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ценаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.отделDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.departmentsLiteratureBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.textBox_Search = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label_Discount = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.departmentsTableAdapter = new Books.BooksDataSetTableAdapters.DepartmentsTableAdapter();
+            this.literatureTableAdapter = new Books.BooksDataSetTableAdapters.LiteratureTableAdapter();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.booksDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.departmentsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.booksDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.departmentsLiteratureBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -67,19 +69,47 @@
             this.dataGridView1.Size = new System.Drawing.Size(476, 229);
             this.dataGridView1.TabIndex = 0;
             // 
-            // booksDataSet
+            // кодDataGridViewTextBoxColumn
             // 
-            this.booksDataSet.DataSetName = "BooksDataSet";
-            this.booksDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.кодDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.кодDataGridViewTextBoxColumn.DataPropertyName = "Код";
+            this.кодDataGridViewTextBoxColumn.HeaderText = "Код";
+            this.кодDataGridViewTextBoxColumn.Name = "кодDataGridViewTextBoxColumn";
+            this.кодDataGridViewTextBoxColumn.Width = 52;
+            // 
+            // названиеDataGridViewTextBoxColumn
+            // 
+            this.названиеDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.названиеDataGridViewTextBoxColumn.DataPropertyName = "Название";
+            this.названиеDataGridViewTextBoxColumn.HeaderText = "Название";
+            this.названиеDataGridViewTextBoxColumn.Name = "названиеDataGridViewTextBoxColumn";
+            this.названиеDataGridViewTextBoxColumn.Width = 80;
+            // 
+            // ответственныйDataGridViewTextBoxColumn
+            // 
+            this.ответственныйDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ответственныйDataGridViewTextBoxColumn.DataPropertyName = "Ответственный";
+            this.ответственныйDataGridViewTextBoxColumn.HeaderText = "Ответственный";
+            this.ответственныйDataGridViewTextBoxColumn.Name = "ответственныйDataGridViewTextBoxColumn";
+            this.ответственныйDataGridViewTextBoxColumn.Width = 113;
+            // 
+            // стеллажDataGridViewTextBoxColumn
+            // 
+            this.стеллажDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.стеллажDataGridViewTextBoxColumn.DataPropertyName = "Стеллаж";
+            this.стеллажDataGridViewTextBoxColumn.HeaderText = "Стеллаж";
+            this.стеллажDataGridViewTextBoxColumn.Name = "стеллажDataGridViewTextBoxColumn";
+            this.стеллажDataGridViewTextBoxColumn.Width = 77;
             // 
             // departmentsBindingSource
             // 
             this.departmentsBindingSource.DataMember = "Departments";
             this.departmentsBindingSource.DataSource = this.booksDataSet;
             // 
-            // departmentsTableAdapter
+            // booksDataSet
             // 
-            this.departmentsTableAdapter.ClearBeforeFill = true;
+            this.booksDataSet.DataSetName = "BooksDataSet";
+            this.booksDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dataGridView2
             // 
@@ -98,64 +128,13 @@
             this.dataGridView2.TabIndex = 1;
             this.dataGridView2.SelectionChanged += new System.EventHandler(this.dataGridView2_SelectionChanged);
             // 
-            // departmentsLiteratureBindingSource
-            // 
-            this.departmentsLiteratureBindingSource.DataMember = "DepartmentsLiterature";
-            this.departmentsLiteratureBindingSource.DataSource = this.departmentsBindingSource;
-            // 
-            // literatureTableAdapter
-            // 
-            this.literatureTableAdapter.ClearBeforeFill = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(13, 509);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 29);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Сохранить";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // кодDataGridViewTextBoxColumn
-            // 
-            this.кодDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.кодDataGridViewTextBoxColumn.DataPropertyName = "Код";
-            this.кодDataGridViewTextBoxColumn.HeaderText = "Код";
-            this.кодDataGridViewTextBoxColumn.Name = "кодDataGridViewTextBoxColumn";
-            this.кодDataGridViewTextBoxColumn.Width = 51;
-            // 
-            // названиеDataGridViewTextBoxColumn
-            // 
-            this.названиеDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.названиеDataGridViewTextBoxColumn.DataPropertyName = "Название";
-            this.названиеDataGridViewTextBoxColumn.HeaderText = "Название";
-            this.названиеDataGridViewTextBoxColumn.Name = "названиеDataGridViewTextBoxColumn";
-            this.названиеDataGridViewTextBoxColumn.Width = 82;
-            // 
-            // ответственныйDataGridViewTextBoxColumn
-            // 
-            this.ответственныйDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ответственныйDataGridViewTextBoxColumn.DataPropertyName = "Ответственный";
-            this.ответственныйDataGridViewTextBoxColumn.HeaderText = "Ответственный";
-            this.ответственныйDataGridViewTextBoxColumn.Name = "ответственныйDataGridViewTextBoxColumn";
-            this.ответственныйDataGridViewTextBoxColumn.Width = 111;
-            // 
-            // стеллажDataGridViewTextBoxColumn
-            // 
-            this.стеллажDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.стеллажDataGridViewTextBoxColumn.DataPropertyName = "Стеллаж";
-            this.стеллажDataGridViewTextBoxColumn.HeaderText = "Стеллаж";
-            this.стеллажDataGridViewTextBoxColumn.Name = "стеллажDataGridViewTextBoxColumn";
-            this.стеллажDataGridViewTextBoxColumn.Width = 76;
-            // 
             // кодDataGridViewTextBoxColumn1
             // 
             this.кодDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.кодDataGridViewTextBoxColumn1.DataPropertyName = "Код";
             this.кодDataGridViewTextBoxColumn1.HeaderText = "Код";
             this.кодDataGridViewTextBoxColumn1.Name = "кодDataGridViewTextBoxColumn1";
-            this.кодDataGridViewTextBoxColumn1.Width = 51;
+            this.кодDataGridViewTextBoxColumn1.Width = 52;
             // 
             // авторDataGridViewTextBoxColumn
             // 
@@ -187,14 +166,29 @@
             this.отделDataGridViewTextBoxColumn.DataPropertyName = "Отдел";
             this.отделDataGridViewTextBoxColumn.HeaderText = "Отдел";
             this.отделDataGridViewTextBoxColumn.Name = "отделDataGridViewTextBoxColumn";
-            this.отделDataGridViewTextBoxColumn.Width = 63;
+            this.отделDataGridViewTextBoxColumn.Width = 65;
+            // 
+            // departmentsLiteratureBindingSource
+            // 
+            this.departmentsLiteratureBindingSource.DataMember = "DepartmentsLiterature";
+            this.departmentsLiteratureBindingSource.DataSource = this.departmentsBindingSource;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(13, 509);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(101, 29);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Сохранить";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox_Search
             // 
             this.textBox_Search.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox_Search.Location = new System.Drawing.Point(498, 50);
             this.textBox_Search.Name = "textBox_Search";
-            this.textBox_Search.Size = new System.Drawing.Size(162, 20);
+            this.textBox_Search.Size = new System.Drawing.Size(159, 21);
             this.textBox_Search.TabIndex = 3;
             // 
             // label1
@@ -212,7 +206,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(495, 101);
+            this.label2.Location = new System.Drawing.Point(495, 218);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 13);
             this.label2.TabIndex = 5;
@@ -221,17 +215,47 @@
             // label_Discount
             // 
             this.label_Discount.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label_Discount.Location = new System.Drawing.Point(514, 127);
+            this.label_Discount.Location = new System.Drawing.Point(514, 244);
             this.label_Discount.Name = "label_Discount";
             this.label_Discount.Size = new System.Drawing.Size(75, 15);
             this.label_Discount.TabIndex = 6;
             this.label_Discount.Text = "...";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(498, 77);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(79, 23);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Поиск";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // departmentsTableAdapter
+            // 
+            this.departmentsTableAdapter.ClearBeforeFill = true;
+            // 
+            // literatureTableAdapter
+            // 
+            this.literatureTableAdapter.ClearBeforeFill = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(578, 77);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(79, 23);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "Сброс";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(741, 550);
+            this.ClientSize = new System.Drawing.Size(675, 558);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label_Discount);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -243,8 +267,8 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.booksDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.departmentsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.booksDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.departmentsLiteratureBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -275,6 +299,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label_Discount;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 

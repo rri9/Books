@@ -39,13 +39,28 @@ namespace Books {
             }
             else {
                 //string s = (string)dataGridView2.CurrentRow.Cells[3].Value * 0.95;
-
-                object CurBookPrice = dataGridView2.CurrentRow.Cells[3].Value;
-                /*int CurRow = dataGridView2.CurrentCell.RowIndex;
-                int CurBookPrice = dataGridView2.Rows[CurRow].Cells[3].Value;*/
-                double DiscountedPrice = Convert.ToInt32(CurBookPrice) * 0.95;
-                label_Discount.Text = DiscountedPrice.ToString();
+                try
+                {
+                    object CurBookPrice = dataGridView2.CurrentRow.Cells[3].Value;
+                    /*int CurRow = dataGridView2.CurrentCell.RowIndex;
+                    int CurBookPrice = dataGridView2.Rows[CurRow].Cells[3].Value;*/
+                    double DiscountedPrice = Convert.ToInt32(CurBookPrice) * 0.95;
+                    label_Discount.Text = DiscountedPrice.ToString();
+                }
+                catch { }
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string Strings =
+                textBox_Search.Text;
+            this.literatureTableAdapter.FillBy_(this.booksDataSet.Literature, '%'+Strings+'%');
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Form1_Reload();
         }
     }
 }
