@@ -47,11 +47,15 @@
             this.departmentsTableAdapter = new Books.BooksDataSetTableAdapters.DepartmentsTableAdapter();
             this.literatureTableAdapter = new Books.BooksDataSetTableAdapters.LiteratureTableAdapter();
             this.button3 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.departmentsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.departmentsLiteratureBindingSource)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -75,7 +79,7 @@
             this.кодDataGridViewTextBoxColumn.DataPropertyName = "Код";
             this.кодDataGridViewTextBoxColumn.HeaderText = "Код";
             this.кодDataGridViewTextBoxColumn.Name = "кодDataGridViewTextBoxColumn";
-            this.кодDataGridViewTextBoxColumn.Width = 52;
+            this.кодDataGridViewTextBoxColumn.Width = 51;
             // 
             // названиеDataGridViewTextBoxColumn
             // 
@@ -83,7 +87,7 @@
             this.названиеDataGridViewTextBoxColumn.DataPropertyName = "Название";
             this.названиеDataGridViewTextBoxColumn.HeaderText = "Название";
             this.названиеDataGridViewTextBoxColumn.Name = "названиеDataGridViewTextBoxColumn";
-            this.названиеDataGridViewTextBoxColumn.Width = 80;
+            this.названиеDataGridViewTextBoxColumn.Width = 82;
             // 
             // ответственныйDataGridViewTextBoxColumn
             // 
@@ -91,7 +95,7 @@
             this.ответственныйDataGridViewTextBoxColumn.DataPropertyName = "Ответственный";
             this.ответственныйDataGridViewTextBoxColumn.HeaderText = "Ответственный";
             this.ответственныйDataGridViewTextBoxColumn.Name = "ответственныйDataGridViewTextBoxColumn";
-            this.ответственныйDataGridViewTextBoxColumn.Width = 113;
+            this.ответственныйDataGridViewTextBoxColumn.Width = 111;
             // 
             // стеллажDataGridViewTextBoxColumn
             // 
@@ -99,7 +103,7 @@
             this.стеллажDataGridViewTextBoxColumn.DataPropertyName = "Стеллаж";
             this.стеллажDataGridViewTextBoxColumn.HeaderText = "Стеллаж";
             this.стеллажDataGridViewTextBoxColumn.Name = "стеллажDataGridViewTextBoxColumn";
-            this.стеллажDataGridViewTextBoxColumn.Width = 77;
+            this.стеллажDataGridViewTextBoxColumn.Width = 76;
             // 
             // departmentsBindingSource
             // 
@@ -134,7 +138,7 @@
             this.кодDataGridViewTextBoxColumn1.DataPropertyName = "Код";
             this.кодDataGridViewTextBoxColumn1.HeaderText = "Код";
             this.кодDataGridViewTextBoxColumn1.Name = "кодDataGridViewTextBoxColumn1";
-            this.кодDataGridViewTextBoxColumn1.Width = 52;
+            this.кодDataGridViewTextBoxColumn1.Width = 51;
             // 
             // авторDataGridViewTextBoxColumn
             // 
@@ -166,7 +170,7 @@
             this.отделDataGridViewTextBoxColumn.DataPropertyName = "Отдел";
             this.отделDataGridViewTextBoxColumn.HeaderText = "Отдел";
             this.отделDataGridViewTextBoxColumn.Name = "отделDataGridViewTextBoxColumn";
-            this.отделDataGridViewTextBoxColumn.Width = 65;
+            this.отделDataGridViewTextBoxColumn.Width = 63;
             // 
             // departmentsLiteratureBindingSource
             // 
@@ -188,7 +192,7 @@
             this.textBox_Search.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox_Search.Location = new System.Drawing.Point(498, 50);
             this.textBox_Search.Name = "textBox_Search";
-            this.textBox_Search.Size = new System.Drawing.Size(159, 21);
+            this.textBox_Search.Size = new System.Drawing.Size(159, 20);
             this.textBox_Search.TabIndex = 3;
             // 
             // label1
@@ -249,6 +253,31 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.выходToolStripMenuItem,
+            this.оПрограммеToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(675, 24);
+            this.menuStrip1.TabIndex = 9;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // выходToolStripMenuItem
+            // 
+            this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.выходToolStripMenuItem.Text = "Выход";
+            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
+            // 
+            // оПрограммеToolStripMenuItem
+            // 
+            this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
+            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
+            this.оПрограммеToolStripMenuItem.Text = "О программе";
+            this.оПрограммеToolStripMenuItem.Click += new System.EventHandler(this.оПрограммеToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -263,6 +292,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -271,6 +302,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.booksDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.departmentsLiteratureBindingSource)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -301,6 +334,9 @@
         private System.Windows.Forms.Label label_Discount;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
     }
 }
 

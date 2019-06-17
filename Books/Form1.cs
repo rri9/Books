@@ -62,5 +62,15 @@ namespace Books {
         {
             this.Form1_Reload();
         }
+
+        private void выходToolStripMenuItem_Click(object sender, EventArgs e) {
+            Application.Exit();
+        }
+
+        private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e) {
+            Form2 Info = new Form2();
+            Info.Owner = this;
+            Info.ShowDialog();
+        }
     }
 }

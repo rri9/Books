@@ -18,3 +18,14 @@ D:\Ruslan\Git\Books\Books\obj\Debug\Books.csproj.GenerateResource.cache
 D:\Ruslan\Git\Books\Books\obj\Debug\Books.csproj.CoreCompileInputs.cache
 D:\Ruslan\Git\Books\Books\obj\Debug\Books.exe
 D:\Ruslan\Git\Books\Books\obj\Debug\Books.pdb
+C:\Git\Books\Books\bin\Debug\Books.exe.config
+C:\Git\Books\Books\bin\Debug\Books.exe
+C:\Git\Books\Books\bin\Debug\Books.pdb
+C:\Git\Books\Books\obj\Debug\Books.csprojAssemblyReference.cache
+C:\Git\Books\Books\obj\Debug\Books.Form1.resources
+C:\Git\Books\Books\obj\Debug\Books.Properties.Resources.resources
+C:\Git\Books\Books\obj\Debug\Books.csproj.GenerateResource.cache
+C:\Git\Books\Books\obj\Debug\Books.csproj.CoreCompileInputs.cache
+C:\Git\Books\Books\obj\Debug\Books.exe
+C:\Git\Books\Books\obj\Debug\Books.pdb
+C:\Git\Books\Books\obj\Debug\Books.Form2.resources
